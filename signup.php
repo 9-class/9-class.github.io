@@ -3,7 +3,7 @@ session_start();
 
 // Check if user is already logged in
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: homepage.html");
     exit;
 }
 
@@ -62,3 +62,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $confirm_password_err = "Please confirm password.";     
     } else{
         $confirm_password = trim($_POST["confirm_password"]);
+    }
+}
