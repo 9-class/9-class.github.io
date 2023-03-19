@@ -4,13 +4,13 @@
     <title>My Website</title>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="signup"></div>
     <script>
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'signup.php');
         xhr.onload = function() {
             if (xhr.status === 200) {
-                document.getElementById('content').innerHTML = xhr.responseText;
+                document.getElementById('signup').innerHTML = xhr.responseText;
             }
         };
          xhr.send();
